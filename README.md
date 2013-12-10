@@ -1,16 +1,16 @@
-# Embedded Twitter Timeline in PhoneGap application
+## Embedded Twitter Timeline in PhoneGap application
 
 This is a dead simple service that allows to easily integrate an embedded twitter timeline to the PhoneGap native application.
 
 The solution has been tested on PhoneGap 3.1.0 for iOS and Android versions.
 
-## Configuration
+### Configuration
 
 1) Create an embedded timeline widget.
 
   Login to your twitter account --> Settings --> Widgets --> Create new
 
-  After the widget has been created copy it's id either from a RESTful url or from generated <script> block.
+  After the widget has been created copy it's id either from a RESTful url or from generated *script* block.
   It has the following format:
     410453165654278145
 
