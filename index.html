@@ -4,8 +4,32 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-  <a class="twitter-timeline" href="#" data-widget-id="399136844954087424"></a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <!-- Widget Id is extracted from the location parameter.
+       Expected url is: http://k-rudy.github.io/phonegap-twitter-timeline?410453165654278145 -->
+  <script type="text/javascript">
+    !function(d, s, id){
+      var fjs = d.getElementsByTagName(s)[0];
+      var p = /^http:/.test(d.location) ? 'http' : 'https';
+      var aid = id + '_timeline';
+      var widget_id = d.location.search.replace('?', '');
+
+      if (!d.getElementById(aid)) {
+        var a = d.createElement('a');
+        a.id = aid;
+        a.href = '#';
+        a.setAttribute('class', 'twitter-timeline');
+        a.setAttribute('data-widget-id', widget_id);
+        fjs.parentNode.insertBefore(a,fjs);
+      }
+
+      if (!d.getElementById(id)) {
+        var js = d.createElement(s);
+        js.id = id;
+        js.src = p + "://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+    }(document,"script","twitter-wjs");
+  </script>
 </body>
 </html>
 
