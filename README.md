@@ -31,19 +31,6 @@ If you're using Command Line tools run:
 
 Replace the widget ID in the url with the id of your embedded widget.
 
-### Known issues
-
-1) InAppBrowser content scales out on Android devices. This issue has been reported in the InAppBrowser Jira - https://issues.apache.org/jira/browse/CB-5683
-
-I've raised a PR that fixes the problem for me - https://github.com/apache/cordova-plugin-inappbrowser/pull/16
-
-Until it's merged or another solution applied - a possible solution is using plugin's fork that contains the fix:
-
-    cordova plugin add https://github.com/k-rudy/cordova-plugin-inappbrowser.git
-
-Instead of
-
-    cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git
 
 Enjoy!
 
