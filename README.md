@@ -27,15 +27,14 @@ If you're using Command Line tools run:
 
 3) In your PhoneGap js file open InAppBrowserWindow with the twitter timeline:
 
-    window.open(encodeURI('http://k-rudy.github.io/phonegap-twitter-timeline?410453165654278145'), '_blank', 'location=no');
+    window.open(encodeURI('http://k-rudy.github.io/phonegap-twitter-timeline/?410453165654278145'), '_blank', 'location=no');
 
-Replace the widget ID in the url with the id of your embedded widget:
+4) Replace the widget ID in the url with the id of your embedded widget:
 
-**iPhone:**
-![](http://k-rudy.github.io/phonegap-twitter-timeline/images/iphone.png)
 
-**Android:**
-![](http://k-rudy.github.io/phonegap-twitter-timeline/images/android.png)
+### Working screenshots
+
+![](http://k-rudy.github.io/phonegap-twitter-timeline/images/screenshots.png)
 
 
 Enjoy!
