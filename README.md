@@ -29,7 +29,13 @@ If you're using Command Line tools run:
 
     window.open(encodeURI('http://k-rudy.github.io/phonegap-twitter-timeline?410453165654278145'), '_blank', 'location=no');
 
-Replace the widget ID in the url with the id of your embedded widget.
+Replace the widget ID in the url with the id of your embedded widget:
+
+**iPhone:**
+![](http://k-rudy.github.io/phonegap-twitter-timeline/images/iphone.png)
+
+**Android:**
+![](http://k-rudy.github.io/phonegap-twitter-timeline/images/android.png)
 
 
 Enjoy!
