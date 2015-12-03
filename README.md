@@ -32,6 +32,10 @@ If you're using Command Line tools run:
 4) Replace the widget ID in the url with the id of your embedded widget:
 
 
+### Troubleshooting
+
+1) If you're using the first version of the service and getting Github 404 Not Found error, you should put slash `/` in front of `?` before your widget id in the widget URL. This is caused by changes in the way Github Pages process parameters. [More Details](https://github.com/k-rudy/phonegap-twitter-timeline/issues/2)
+
 ### Working screenshots
 
 ![](http://k-rudy.github.io/phonegap-twitter-timeline/images/screenshots.png)
