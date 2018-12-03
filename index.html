@@ -12,14 +12,14 @@
       var fjs = d.getElementsByTagName(s)[0];
       var p = /^http:/.test(d.location) ? 'http' : 'https';
       var aid = id + '_timeline';
-      var widget_id = d.location.search.replace('?', '');
+      var twitter_page = d.location.search.replace('?', '');
 
       if (!d.getElementById(aid)) {
         var a = d.createElement('a');
         a.id = aid;
-        a.href = '#';
-        a.setAttribute('class', 'twitter-timeline');
-        a.setAttribute('data-widget-id', widget_id);
+        a.href = 'https://twitter.com/intent/tweet?button_hashtag=' + twitter_page;
+        a.setAttribute('class', 'twitter-hashtag-button');
+        a.setAttribute('data-show-count', false);
         fjs.parentNode.insertBefore(a,fjs);
       }
 
@@ -33,4 +33,3 @@
   </script>
 </body>
 </html>
-
