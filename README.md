@@ -6,16 +6,7 @@ The solution has been tested on PhoneGap 3.1.0 for iOS and Android versions.
 
 ### Configuration
 
-1. Create an embedded timeline widget.
-
-    Login to your twitter account --> Settings --> Widgets --> Create new
-
-    After the widget has been created copy it's id either from a RESTful url or from generated *script* block.
-    It has the following format:
-
-        410453165654278145
-
-2. Add InAppBrowser PhoneGap plugin to your application.
+1. Add InAppBrowser PhoneGap plugin to your application.
 
     If you're using PhoneGapBuild service, add the following to the **config.xml**:
 
@@ -25,16 +16,18 @@ The solution has been tested on PhoneGap 3.1.0 for iOS and Android versions.
 
         cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git
 
-3. In your PhoneGap js file open InAppBrowserWindow with the twitter timeline:
+2. In your PhoneGap js file open InAppBrowserWindow with the twitter timeline:
 
-        window.open(encodeURI('http://k-rudy.github.io/phonegap-twitter-timeline/?410453165654278145'), '_blank', 'location=no');
+        window.open(encodeURI('http://k-rudy.github.io/phonegap-twitter-timeline/?roodyruby'), '_blank', 'location=no');
 
-4. Replace the widget ID in the url with the id of your embedded widget:
+3. Replace the `roodyruby` in the url with the twitter username / hashtag of the page you want to embed
 
 
 ### Troubleshooting
 
 1. If you're using the first version of the service and getting Github 404 Not Found error, you should put slash `/` in front of `?` before your widget id in the widget URL. This is caused by changes in the way Github Pages process parameters. [More Details](https://github.com/k-rudy/phonegap-twitter-timeline/issues/2)
+
+2. If you are using the second version of the service, you might need to replace `widget_id` with `twitter_page` in the url, as things are way simpler now
 
 ### Working screenshots
 
@@ -42,4 +35,3 @@ The solution has been tested on PhoneGap 3.1.0 for iOS and Android versions.
 
 
 Enjoy!
-

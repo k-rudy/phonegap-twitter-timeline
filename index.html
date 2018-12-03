@@ -17,9 +17,8 @@
       if (!d.getElementById(aid)) {
         var a = d.createElement('a');
         a.id = aid;
-        a.href = 'https://twitter.com/intent/tweet?button_hashtag=' + twitter_page;
-        a.setAttribute('class', 'twitter-hashtag-button');
-        a.setAttribute('data-show-count', false);
+        a.href = 'https://twitter.com/' + twitter_page;
+        a.setAttribute('class', 'twitter-timeline');
         fjs.parentNode.insertBefore(a,fjs);
       }
 
