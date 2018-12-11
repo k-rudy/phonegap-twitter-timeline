@@ -27,7 +27,7 @@ The solution has been tested on PhoneGap 3.1.0 for iOS and Android versions.
 
 1. If you're using the first version of the service and getting Github 404 Not Found error, you should put slash `/` in front of `?` before your widget id in the widget URL. This is caused by changes in the way Github Pages process parameters. [More Details](https://github.com/k-rudy/phonegap-twitter-timeline/issues/2)
 
-2. If you are using the second version of the service, you might need to replace `widget_id` with `twitter_page` in the url, as things are way simpler now
+2. If you are using the second version of the service, and are getting blank screen instead of the timeline, you might need to replace `widget_id` with `twitter_page` in the url, as things are way simpler now. [More Details](https://github.com/k-rudy/phonegap-twitter-timeline/issues/3)
 
 ### Working screenshots
 
